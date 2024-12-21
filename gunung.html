@@ -99,12 +99,46 @@
       .card:hover {
         transform: scale(1.05); /* Scale effect on hover */
       }
+
+      /* Media Queries for Responsiveness */
+      @media (max-width: 768px) {
+        svg text {
+          font-size: 3rem; /* Adjust font size for smaller screens */
+        }
+
+        .card {
+          width: 90%; /* Full width on smaller screens */
+        }
+
+        .card-container {
+          flex-direction: column; /* Stack cards vertically on small screens */
+          align-items: center; /* Center cards */
+        }
+
+        .card img {
+          height: 120px; /* Adjust image height for smaller screens */
+        }
+
+        .card h3 {
+          font-size: 1.2rem; /* Adjust heading size */
+        }
+
+        .card p {
+          font-size: 0.8rem; /* Adjust paragraph size */
+        }
+      }
+
+      @media (max-width: 480px) {
+        svg text {
+          font-size: 2.5rem; /* Further adjust font size for very small screens */
+        }
+      }
     </style>
   </head>
   <body>
     <svg viewBox="0 0 1320 300">
       <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle">
-    CITY LIGHT
+        CITY LIGHT, Sunrise, Sunset Lautan Awan
       </text>
     </svg>
 
@@ -117,6 +151,16 @@
           <p>Ini di panjang . pas bawah pemancar</p>
         </div>
         <div class="card">
+          <img src="img/kendeng.jpg" alt="Waduk" />
+          <h3>Kendeng</h3>
+          <p>Ini Sunsrise, Sunset ,Lautan awan dapet</p>
+        </div>
+        <div class="card">
+          <img src="img/calian.jpg" alt="Waduk" />
+          <h3>Calliandra</h3>
+          <p>Ini Sunsrise, Sunset ,Lautan awan dapet</p>
+        </div>
+        <div class="card">
           <img src="img/teropongkota.jpg" alt="Gunung" />
           <h3>Teropong Kota</h3>
           <p>Ini Di Tanjung Karang Dkt pasar apa gitu lupa</p>
@@ -125,6 +169,7 @@
           <img src="img/lengkung langit.jpg" alt="Waduk" />
           <h3>Lengkung Langit</h3>
           <p>Ini di Kemiling</p>
+        </div>
       </div>
     </section>
   </body>
